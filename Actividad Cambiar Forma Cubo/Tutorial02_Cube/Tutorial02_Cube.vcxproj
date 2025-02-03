@@ -1,0 +1,870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BFAFC5FB-B396-3768-9F79-C851ED57AC05}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Tutorial02_Cube</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentSamples\Tutorials\Tutorial02_Cube\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Tutorial02_Cube.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Tutorial02_Cube</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Usuario/source/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial02_Cube/assets</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentSamples\Tutorials\Tutorial02_Cube\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Tutorial02_Cube.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Tutorial02_Cube</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Usuario/source/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial02_Cube/assets</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentSamples\Tutorials\Tutorial02_Cube\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Tutorial02_Cube.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Tutorial02_Cube</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Usuario/source/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial02_Cube/assets</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentSamples\Tutorials\Tutorial02_Cube\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Tutorial02_Cube.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Tutorial02_Cube</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Usuario/source/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial02_Cube/assets</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include\Win32;C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Common\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Primitives\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\TextureLoader\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\ThirdParty\imgui;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\Imgui\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4201;4100;4505;26812</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;DEBUG;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;WEBGPU_SUPPORTED=0;DILIGENT_DEVELOPMENT;DILIGENT_DEBUG;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;ENGINE_DLL=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;DEBUG;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;WEBGPU_SUPPORTED=0;DILIGENT_DEVELOPMENT;DILIGENT_DEBUG;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;ENGINE_DLL=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include\Win32;C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Common\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Primitives\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\TextureLoader\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\ThirdParty\imgui;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\Imgui\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include\Win32;C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Common\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Primitives\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\TextureLoader\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\ThirdParty\imgui;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\Imgui\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>								</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineD3D11/Debug/GraphicsEngineD3D11_64d.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineD3D12/Debug/GraphicsEngineD3D12_64d.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineOpenGL/Debug/GraphicsEngineOpenGL_64d.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineVulkan/Debug/GraphicsEngineVk_64d.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/Archiver/Debug/Archiver_64d.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "$(WindowsSdkDir)\bin\10.0.22621.0\x64\D3Dcompiler_47.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "$(WindowsSdkDir)\bin\10.0.22621.0\x64\dxcompiler.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "$(WindowsSdkDir)\bin\10.0.22621.0\x64\dxil.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/Usuario/source/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial02_Cube/assets "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Debug"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\DiligentTools\NativeApp\Debug\Diligent-NativeAppBase.lib;..\..\SampleBase\Debug\Diligent-SampleBase.lib;..\..\..\DiligentTools\NativeApp\Debug\Diligent-NativeAppBase.lib;..\..\..\DiligentTools\TextureLoader\Debug\Diligent-TextureLoader.lib;..\..\..\DiligentTools\ThirdParty\libpng\Debug\libpng16_staticd.lib;..\..\..\DiligentTools\ThirdParty\libtiff\Debug\LibTiff.lib;..\..\..\DiligentTools\ThirdParty\Debug\ZLib.lib;..\..\..\DiligentTools\ThirdParty\libjpeg-9e\Debug\LibJpeg.lib;..\..\..\DiligentTools\Imgui\Debug\Diligent-Imgui.lib;..\..\..\DiligentCore\Graphics\GraphicsTools\Debug\Diligent-GraphicsTools.lib;..\..\..\DiligentCore\ThirdParty\xxHash\cmake_unofficial\Debug\xxhash.lib;..\..\..\DiligentCore\Graphics\Archiver\Debug\Diligent-Archiver-static.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineVulkan\Debug\Diligent-GraphicsEngineVk-static.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineOpenGL\Debug\Diligent-GraphicsEngineOpenGL-static.lib;..\..\..\DiligentCore\ThirdParty\glew\Debug\glew-static.lib;opengl32.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D11\Debug\Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D12\Debug\Diligent-GraphicsEngineD3D12-static.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineNextGenBase\Debug\Diligent-GraphicsEngineNextGenBase.lib;dxgi.lib;d3dcompiler.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Cross\Debug\spirv-cross-glsld.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3DBase\Debug\Diligent-GraphicsEngineD3DBase.lib;..\..\..\DiligentCore\Graphics\ShaderTools\Debug\Diligent-ShaderTools.lib;..\..\..\DiligentCore\Graphics\HLSL2GLSLConverterLib\Debug\Diligent-HLSL2GLSLConverterLib.lib;..\..\..\DiligentCore\Graphics\ShaderTools\Debug\Diligent-ShaderTools.lib;..\..\..\DiligentCore\Graphics\HLSL2GLSLConverterLib\Debug\Diligent-HLSL2GLSLConverterLib.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Cross\Debug\spirv-cross-cored.lib;..\..\..\DiligentCore\ThirdParty\glslang\SPIRV\Debug\SPIRVd.lib;..\..\..\DiligentCore\ThirdParty\glslang\glslang\Debug\glslangd.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Tools\source\opt\Debug\SPIRV-Tools-opt.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Tools\source\Debug\SPIRV-Tools.lib;..\..\..\DiligentCore\Graphics\GraphicsEngine\Debug\Diligent-GraphicsEngine.lib;..\..\..\DiligentCore\Graphics\GraphicsAccessories\Debug\Diligent-GraphicsAccessories.lib;..\..\..\DiligentCore\Common\Debug\Diligent-Common.lib;..\..\..\DiligentCore\Platforms\Win32\Debug\Diligent-Win32Platform.lib;..\..\..\DiligentCore\Platforms\Basic\Debug\Diligent-BasicPlatform.lib;Shlwapi.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D11\Debug\GraphicsEngineD3D11_64d.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D12\Debug\GraphicsEngineD3D12_64d.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineOpenGL\Debug\GraphicsEngineOpenGL_64d.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineVulkan\Debug\GraphicsEngineVk_64d.lib;..\..\..\DiligentCore\Primitives\Debug\Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Debug/Tutorial02_Cube.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Debug/Tutorial02_Cube.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include\Win32;C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Common\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Primitives\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\TextureLoader\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\ThirdParty\imgui;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\Imgui\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4201;4100;4505;26812;4189</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;WEBGPU_SUPPORTED=0;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;ENGINE_DLL=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;WEBGPU_SUPPORTED=0;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;ENGINE_DLL=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include\Win32;C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Common\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Primitives\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\TextureLoader\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\ThirdParty\imgui;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\Imgui\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include\Win32;C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Common\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Primitives\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\TextureLoader\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\ThirdParty\imgui;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\Imgui\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>								</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineD3D11/Release/GraphicsEngineD3D11_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Release"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineD3D12/Release/GraphicsEngineD3D12_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Release"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineOpenGL/Release/GraphicsEngineOpenGL_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Release"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineVulkan/Release/GraphicsEngineVk_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Release"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/Archiver/Release/Archiver_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Release"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "$(WindowsSdkDir)\bin\10.0.22621.0\x64\D3Dcompiler_47.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Release"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "$(WindowsSdkDir)\bin\10.0.22621.0\x64\dxcompiler.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Release"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "$(WindowsSdkDir)\bin\10.0.22621.0\x64\dxil.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Release"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/Usuario/source/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial02_Cube/assets "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Release"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\DiligentTools\NativeApp\Release\Diligent-NativeAppBase.lib;..\..\SampleBase\Release\Diligent-SampleBase.lib;..\..\..\DiligentTools\NativeApp\Release\Diligent-NativeAppBase.lib;..\..\..\DiligentTools\TextureLoader\Release\Diligent-TextureLoader.lib;..\..\..\DiligentTools\ThirdParty\libpng\Release\libpng16_static.lib;..\..\..\DiligentTools\ThirdParty\libtiff\Release\LibTiff.lib;..\..\..\DiligentTools\ThirdParty\Release\ZLib.lib;..\..\..\DiligentTools\ThirdParty\libjpeg-9e\Release\LibJpeg.lib;..\..\..\DiligentTools\Imgui\Release\Diligent-Imgui.lib;..\..\..\DiligentCore\Graphics\GraphicsTools\Release\Diligent-GraphicsTools.lib;..\..\..\DiligentCore\ThirdParty\xxHash\cmake_unofficial\Release\xxhash.lib;..\..\..\DiligentCore\Graphics\Archiver\Release\Diligent-Archiver-static.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineVulkan\Release\Diligent-GraphicsEngineVk-static.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineOpenGL\Release\Diligent-GraphicsEngineOpenGL-static.lib;..\..\..\DiligentCore\ThirdParty\glew\Release\glew-static.lib;opengl32.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D11\Release\Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D12\Release\Diligent-GraphicsEngineD3D12-static.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineNextGenBase\Release\Diligent-GraphicsEngineNextGenBase.lib;dxgi.lib;d3dcompiler.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Cross\Release\spirv-cross-glsl.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3DBase\Release\Diligent-GraphicsEngineD3DBase.lib;..\..\..\DiligentCore\Graphics\ShaderTools\Release\Diligent-ShaderTools.lib;..\..\..\DiligentCore\Graphics\HLSL2GLSLConverterLib\Release\Diligent-HLSL2GLSLConverterLib.lib;..\..\..\DiligentCore\Graphics\ShaderTools\Release\Diligent-ShaderTools.lib;..\..\..\DiligentCore\Graphics\HLSL2GLSLConverterLib\Release\Diligent-HLSL2GLSLConverterLib.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Cross\Release\spirv-cross-core.lib;..\..\..\DiligentCore\ThirdParty\glslang\SPIRV\Release\SPIRV.lib;..\..\..\DiligentCore\ThirdParty\glslang\glslang\Release\glslang.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Tools\source\opt\Release\SPIRV-Tools-opt.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Tools\source\Release\SPIRV-Tools.lib;..\..\..\DiligentCore\Graphics\GraphicsEngine\Release\Diligent-GraphicsEngine.lib;..\..\..\DiligentCore\Graphics\GraphicsAccessories\Release\Diligent-GraphicsAccessories.lib;..\..\..\DiligentCore\Common\Release\Diligent-Common.lib;..\..\..\DiligentCore\Platforms\Win32\Release\Diligent-Win32Platform.lib;..\..\..\DiligentCore\Platforms\Basic\Release\Diligent-BasicPlatform.lib;Shlwapi.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D11\Release\GraphicsEngineD3D11_64r.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D12\Release\GraphicsEngineD3D12_64r.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineOpenGL\Release\GraphicsEngineOpenGL_64r.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineVulkan\Release\GraphicsEngineVk_64r.lib;..\..\..\DiligentCore\Primitives\Release\Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Release/Tutorial02_Cube.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/Release/Tutorial02_Cube.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include\Win32;C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Common\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Primitives\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\TextureLoader\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\ThirdParty\imgui;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\Imgui\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4201;4100;4505;26812;4189</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;WEBGPU_SUPPORTED=0;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;ENGINE_DLL=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;WEBGPU_SUPPORTED=0;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;ENGINE_DLL=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include\Win32;C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Common\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Primitives\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\TextureLoader\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\ThirdParty\imgui;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\Imgui\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include\Win32;C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Common\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Primitives\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\TextureLoader\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\ThirdParty\imgui;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\Imgui\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>								</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineD3D11/MinSizeRel/GraphicsEngineD3D11_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineD3D12/MinSizeRel/GraphicsEngineD3D12_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineOpenGL/MinSizeRel/GraphicsEngineOpenGL_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineVulkan/MinSizeRel/GraphicsEngineVk_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/Archiver/MinSizeRel/Archiver_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "$(WindowsSdkDir)\bin\10.0.22621.0\x64\D3Dcompiler_47.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "$(WindowsSdkDir)\bin\10.0.22621.0\x64\dxcompiler.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "$(WindowsSdkDir)\bin\10.0.22621.0\x64\dxil.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/Usuario/source/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial02_Cube/assets "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/MinSizeRel"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\DiligentTools\NativeApp\MinSizeRel\Diligent-NativeAppBase.lib;..\..\SampleBase\MinSizeRel\Diligent-SampleBase.lib;..\..\..\DiligentTools\NativeApp\MinSizeRel\Diligent-NativeAppBase.lib;..\..\..\DiligentTools\TextureLoader\MinSizeRel\Diligent-TextureLoader.lib;..\..\..\DiligentTools\ThirdParty\libpng\MinSizeRel\libpng16_static.lib;..\..\..\DiligentTools\ThirdParty\libtiff\MinSizeRel\LibTiff.lib;..\..\..\DiligentTools\ThirdParty\MinSizeRel\ZLib.lib;..\..\..\DiligentTools\ThirdParty\libjpeg-9e\MinSizeRel\LibJpeg.lib;..\..\..\DiligentTools\Imgui\MinSizeRel\Diligent-Imgui.lib;..\..\..\DiligentCore\Graphics\GraphicsTools\MinSizeRel\Diligent-GraphicsTools.lib;..\..\..\DiligentCore\ThirdParty\xxHash\cmake_unofficial\MinSizeRel\xxhash.lib;..\..\..\DiligentCore\Graphics\Archiver\MinSizeRel\Diligent-Archiver-static.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineVulkan\MinSizeRel\Diligent-GraphicsEngineVk-static.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineOpenGL\MinSizeRel\Diligent-GraphicsEngineOpenGL-static.lib;..\..\..\DiligentCore\ThirdParty\glew\MinSizeRel\glew-static.lib;opengl32.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D11\MinSizeRel\Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D12\MinSizeRel\Diligent-GraphicsEngineD3D12-static.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineNextGenBase\MinSizeRel\Diligent-GraphicsEngineNextGenBase.lib;dxgi.lib;d3dcompiler.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Cross\MinSizeRel\spirv-cross-glsl.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3DBase\MinSizeRel\Diligent-GraphicsEngineD3DBase.lib;..\..\..\DiligentCore\Graphics\ShaderTools\MinSizeRel\Diligent-ShaderTools.lib;..\..\..\DiligentCore\Graphics\HLSL2GLSLConverterLib\MinSizeRel\Diligent-HLSL2GLSLConverterLib.lib;..\..\..\DiligentCore\Graphics\ShaderTools\MinSizeRel\Diligent-ShaderTools.lib;..\..\..\DiligentCore\Graphics\HLSL2GLSLConverterLib\MinSizeRel\Diligent-HLSL2GLSLConverterLib.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Cross\MinSizeRel\spirv-cross-core.lib;..\..\..\DiligentCore\ThirdParty\glslang\SPIRV\MinSizeRel\SPIRV.lib;..\..\..\DiligentCore\ThirdParty\glslang\glslang\MinSizeRel\glslang.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Tools\source\opt\MinSizeRel\SPIRV-Tools-opt.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Tools\source\MinSizeRel\SPIRV-Tools.lib;..\..\..\DiligentCore\Graphics\GraphicsEngine\MinSizeRel\Diligent-GraphicsEngine.lib;..\..\..\DiligentCore\Graphics\GraphicsAccessories\MinSizeRel\Diligent-GraphicsAccessories.lib;..\..\..\DiligentCore\Common\MinSizeRel\Diligent-Common.lib;..\..\..\DiligentCore\Platforms\Win32\MinSizeRel\Diligent-Win32Platform.lib;..\..\..\DiligentCore\Platforms\Basic\MinSizeRel\Diligent-BasicPlatform.lib;Shlwapi.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D11\MinSizeRel\GraphicsEngineD3D11_64r.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D12\MinSizeRel\GraphicsEngineD3D12_64r.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineOpenGL\MinSizeRel\GraphicsEngineOpenGL_64r.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineVulkan\MinSizeRel\GraphicsEngineVk_64r.lib;..\..\..\DiligentCore\Primitives\MinSizeRel\Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/MinSizeRel/Tutorial02_Cube.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/MinSizeRel/Tutorial02_Cube.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include\Win32;C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Common\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Primitives\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\TextureLoader\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\ThirdParty\imgui;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\Imgui\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4201;4100;4505;26812;4189</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;WEBGPU_SUPPORTED=0;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;ENGINE_DLL=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PLATFORM_WIN32=1;D3D11_SUPPORTED=1;D3D12_SUPPORTED=1;GL_SUPPORTED=1;GLES_SUPPORTED=0;VULKAN_SUPPORTED=1;METAL_SUPPORTED=0;WEBGPU_SUPPORTED=0;DILIGENT_RENDER_STATE_CACHE_SUPPORTED=1;ENGINE_DLL=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include\Win32;C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Common\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Primitives\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\TextureLoader\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\ThirdParty\imgui;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\Imgui\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\NativeApp\include\Win32;C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\include;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Common\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Win32\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\Basic\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Primitives\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Platforms\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsTools\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngine\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\TextureLoader\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\ThirdParty\imgui;C:\Users\Usuario\source\repos\DiligentEngine\DiligentTools\Imgui\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsAccessories\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D11\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3DBase\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineD3D12\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineOpenGL\interface;C:\Users\Usuario\source\repos\DiligentEngine\DiligentCore\Graphics\GraphicsEngineVulkan\interface;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>								</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineD3D11/RelWithDebInfo/GraphicsEngineD3D11_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineD3D12/RelWithDebInfo/GraphicsEngineD3D12_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineOpenGL/RelWithDebInfo/GraphicsEngineOpenGL_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/GraphicsEngineVulkan/RelWithDebInfo/GraphicsEngineVk_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentCore/Graphics/Archiver/RelWithDebInfo/Archiver_64r.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "$(WindowsSdkDir)\bin\10.0.22621.0\x64\D3Dcompiler_47.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "$(WindowsSdkDir)\bin\10.0.22621.0\x64\dxcompiler.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different "$(WindowsSdkDir)\bin\10.0.22621.0\x64\dxil.dll" "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/Users/Usuario/source/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial02_Cube/assets "C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/RelWithDebInfo"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\..\DiligentTools\NativeApp\RelWithDebInfo\Diligent-NativeAppBase.lib;..\..\SampleBase\RelWithDebInfo\Diligent-SampleBase.lib;..\..\..\DiligentTools\NativeApp\RelWithDebInfo\Diligent-NativeAppBase.lib;..\..\..\DiligentTools\TextureLoader\RelWithDebInfo\Diligent-TextureLoader.lib;..\..\..\DiligentTools\ThirdParty\libpng\RelWithDebInfo\libpng16_static.lib;..\..\..\DiligentTools\ThirdParty\libtiff\RelWithDebInfo\LibTiff.lib;..\..\..\DiligentTools\ThirdParty\RelWithDebInfo\ZLib.lib;..\..\..\DiligentTools\ThirdParty\libjpeg-9e\RelWithDebInfo\LibJpeg.lib;..\..\..\DiligentTools\Imgui\RelWithDebInfo\Diligent-Imgui.lib;..\..\..\DiligentCore\Graphics\GraphicsTools\RelWithDebInfo\Diligent-GraphicsTools.lib;..\..\..\DiligentCore\ThirdParty\xxHash\cmake_unofficial\RelWithDebInfo\xxhash.lib;..\..\..\DiligentCore\Graphics\Archiver\RelWithDebInfo\Diligent-Archiver-static.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineVulkan\RelWithDebInfo\Diligent-GraphicsEngineVk-static.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineOpenGL\RelWithDebInfo\Diligent-GraphicsEngineOpenGL-static.lib;..\..\..\DiligentCore\ThirdParty\glew\RelWithDebInfo\glew-static.lib;opengl32.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D11\RelWithDebInfo\Diligent-GraphicsEngineD3D11-static.lib;d3d11.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D12\RelWithDebInfo\Diligent-GraphicsEngineD3D12-static.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineNextGenBase\RelWithDebInfo\Diligent-GraphicsEngineNextGenBase.lib;dxgi.lib;d3dcompiler.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Cross\RelWithDebInfo\spirv-cross-glsl.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3DBase\RelWithDebInfo\Diligent-GraphicsEngineD3DBase.lib;..\..\..\DiligentCore\Graphics\ShaderTools\RelWithDebInfo\Diligent-ShaderTools.lib;..\..\..\DiligentCore\Graphics\HLSL2GLSLConverterLib\RelWithDebInfo\Diligent-HLSL2GLSLConverterLib.lib;..\..\..\DiligentCore\Graphics\ShaderTools\RelWithDebInfo\Diligent-ShaderTools.lib;..\..\..\DiligentCore\Graphics\HLSL2GLSLConverterLib\RelWithDebInfo\Diligent-HLSL2GLSLConverterLib.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Cross\RelWithDebInfo\spirv-cross-core.lib;..\..\..\DiligentCore\ThirdParty\glslang\SPIRV\RelWithDebInfo\SPIRV.lib;..\..\..\DiligentCore\ThirdParty\glslang\glslang\RelWithDebInfo\glslang.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Tools\source\opt\RelWithDebInfo\SPIRV-Tools-opt.lib;..\..\..\DiligentCore\ThirdParty\SPIRV-Tools\source\RelWithDebInfo\SPIRV-Tools.lib;..\..\..\DiligentCore\Graphics\GraphicsEngine\RelWithDebInfo\Diligent-GraphicsEngine.lib;..\..\..\DiligentCore\Graphics\GraphicsAccessories\RelWithDebInfo\Diligent-GraphicsAccessories.lib;..\..\..\DiligentCore\Common\RelWithDebInfo\Diligent-Common.lib;..\..\..\DiligentCore\Platforms\Win32\RelWithDebInfo\Diligent-Win32Platform.lib;..\..\..\DiligentCore\Platforms\Basic\RelWithDebInfo\Diligent-BasicPlatform.lib;Shlwapi.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D11\RelWithDebInfo\GraphicsEngineD3D11_64r.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineD3D12\RelWithDebInfo\GraphicsEngineD3D12_64r.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineOpenGL\RelWithDebInfo\GraphicsEngineOpenGL_64r.lib;..\..\..\DiligentCore\Graphics\GraphicsEngineVulkan\RelWithDebInfo\GraphicsEngineVk_64r.lib;..\..\..\DiligentCore\Primitives\RelWithDebInfo\Diligent-Primitives.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/RelWithDebInfo/Tutorial02_Cube.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/RelWithDebInfo/Tutorial02_Cube.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Usuario/source/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial02_Cube/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Usuario/source/repos/DiligentEngine -BC:/Users/Usuario/source/repos/DiligentEngine/Build --check-stamp-file C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentSamples\Tutorials\Tutorial02_Cube\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Usuario/source/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial02_Cube/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Usuario/source/repos/DiligentEngine -BC:/Users/Usuario/source/repos/DiligentEngine/Build --check-stamp-file C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentSamples\Tutorials\Tutorial02_Cube\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Usuario/source/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial02_Cube/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Usuario/source/repos/DiligentEngine -BC:/Users/Usuario/source/repos/DiligentEngine/Build --check-stamp-file C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentSamples\Tutorials\Tutorial02_Cube\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Usuario/source/repos/DiligentEngine/DiligentSamples/Tutorials/Tutorial02_Cube/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Usuario/source/repos/DiligentEngine -BC:/Users/Usuario/source/repos/DiligentEngine/Build --check-stamp-file C:/Users/Usuario/source/repos/DiligentEngine/Build/DiligentSamples/Tutorials/Tutorial02_Cube/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentSamples\Tutorials\Tutorial02_Cube\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src\Tutorial02_Cube.cpp" />
+    <ClInclude Include="C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src\Tutorial02_Cube.hpp" />
+    <None Include="C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\assets\cube.vsh">
+    </None>
+    <None Include="C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\assets\cube.psh">
+    </None>
+    <ResourceCompile Include="C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\SampleBase\src\Win32\resources\Win32AppResource.rc" />
+    <ClInclude Include="C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\readme.md" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\ZERO_CHECK.vcxproj">
+      <Project>{7D2BFAAF-4CD9-358E-BAB4-10EC69DF08BB}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\Archiver\Diligent-Archiver-shared.vcxproj">
+      <Project>{7DE68996-F5B3-36F0-99A8-56512D9564EE}</Project>
+      <Name>Diligent-Archiver-shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\Archiver\Diligent-Archiver-static.vcxproj">
+      <Project>{65749FB4-120D-39D4-9E84-4638D0171E9C}</Project>
+      <Name>Diligent-Archiver-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Platforms\Basic\Diligent-BasicPlatform.vcxproj">
+      <Project>{0CA151C4-B540-3F74-8846-1A29AAB98B4F}</Project>
+      <Name>Diligent-BasicPlatform</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Common\Diligent-Common.vcxproj">
+      <Project>{ACD4789B-9CC0-3C3E-8091-F6F8653A85B0}</Project>
+      <Name>Diligent-Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsAccessories\Diligent-GraphicsAccessories.vcxproj">
+      <Project>{9CCA77E5-9CF1-3E40-80FF-0CAA4A0F045B}</Project>
+      <Name>Diligent-GraphicsAccessories</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsEngine\Diligent-GraphicsEngine.vcxproj">
+      <Project>{1B2504F6-D3DD-3A55-8502-8A2592CAEB0F}</Project>
+      <Name>Diligent-GraphicsEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsEngineD3D11\Diligent-GraphicsEngineD3D11-shared.vcxproj">
+      <Project>{3A8763D0-A063-3F9D-8611-41F7D8676489}</Project>
+      <Name>Diligent-GraphicsEngineD3D11-shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsEngineD3D11\Diligent-GraphicsEngineD3D11-static.vcxproj">
+      <Project>{5F74F47B-4717-34E1-A05C-AD7397142745}</Project>
+      <Name>Diligent-GraphicsEngineD3D11-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsEngineD3D12\Diligent-GraphicsEngineD3D12-shared.vcxproj">
+      <Project>{5740C6C5-AD1D-388E-8A66-44921B7E96DB}</Project>
+      <Name>Diligent-GraphicsEngineD3D12-shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsEngineD3D12\Diligent-GraphicsEngineD3D12-static.vcxproj">
+      <Project>{F858EA08-A60B-3DBD-BD6C-87CFF89DA96F}</Project>
+      <Name>Diligent-GraphicsEngineD3D12-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsEngineD3DBase\Diligent-GraphicsEngineD3DBase.vcxproj">
+      <Project>{07A3DD0E-73CA-3349-8614-A7FE934B2A38}</Project>
+      <Name>Diligent-GraphicsEngineD3DBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsEngineNextGenBase\Diligent-GraphicsEngineNextGenBase.vcxproj">
+      <Project>{3DC2F240-B6F4-321C-86AD-A2EC74E30117}</Project>
+      <Name>Diligent-GraphicsEngineNextGenBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsEngineOpenGL\Diligent-GraphicsEngineOpenGL-shared.vcxproj">
+      <Project>{D6182946-D816-3877-A7FB-770A4B3AC509}</Project>
+      <Name>Diligent-GraphicsEngineOpenGL-shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsEngineOpenGL\Diligent-GraphicsEngineOpenGL-static.vcxproj">
+      <Project>{52B79B00-1641-3DE2-9AB5-BE39C880FC12}</Project>
+      <Name>Diligent-GraphicsEngineOpenGL-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsEngineVulkan\Diligent-GraphicsEngineVk-shared.vcxproj">
+      <Project>{E070F764-BAE8-3276-BEE1-1C0A8DA05C0A}</Project>
+      <Name>Diligent-GraphicsEngineVk-shared</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsEngineVulkan\Diligent-GraphicsEngineVk-static.vcxproj">
+      <Project>{2749C16B-9BC9-357E-88A3-64256B9F04DE}</Project>
+      <Name>Diligent-GraphicsEngineVk-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\GraphicsTools\Diligent-GraphicsTools.vcxproj">
+      <Project>{F2D0B8C8-BE0B-30B4-87C4-62F12626C40B}</Project>
+      <Name>Diligent-GraphicsTools</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Graphics\HLSL2GLSLConverterLib\Diligent-HLSL2GLSLConverterLib.vcxproj">
+      <Project>{307F487B-DC4E-3D3B-B0B9-78B4A67770B0}</Project>
+      <Name>Diligent-HLSL2GLSLConverterLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentTools\Imgui\Diligent-Imgui.vcxproj">
+      <Project>{C06B9BB9-3BA9-3E4D-AF4F-7440529381BC}</Project>
+      <Name>Diligent-Imgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentTools\NativeApp\Diligent-NativeAppBase.vcxproj">
+      <Project>{040DE317-47D4-3F54-9D23-387117B17566}</Project>
+      <Name>Diligent-NativeAppBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Primitives\Diligent-Primitives.vcxproj">
+      <Project>{74E2D420-72F2-37F6-AADC-B03BB45503AC}</Project>
+      <Name>Diligent-Primitives</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentSamples\SampleBase\Diligent-SampleBase.vcxproj">
+      <Project>{150C8740-B4DE-366E-9358-5D552E9E971A}</Project>
+      <Name>Diligent-SampleBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentTools\TextureLoader\Diligent-TextureLoader.vcxproj">
+      <Project>{4A7698E8-DC1A-354A-AA0B-8C0D2297A3D6}</Project>
+      <Name>Diligent-TextureLoader</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\Platforms\Win32\Diligent-Win32Platform.vcxproj">
+      <Project>{7DA82E51-7A22-3642-93B0-6CA6914F4F21}</Project>
+      <Name>Diligent-Win32Platform</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentTools\ThirdParty\libjpeg-9e\LibJpeg.vcxproj">
+      <Project>{022AB9C5-B041-3A73-A394-FBB7808AE5F3}</Project>
+      <Name>LibJpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentTools\ThirdParty\libtiff\LibTiff.vcxproj">
+      <Project>{0BB8F4BB-0A76-3846-BA30-055084871412}</Project>
+      <Name>LibTiff</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\ThirdParty\glslang\SPIRV\SPIRV.vcxproj">
+      <Project>{D1CA27C9-1D34-3FEE-A976-34889B573511}</Project>
+      <Name>SPIRV</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\ThirdParty\SPIRV-Tools\source\opt\SPIRV-Tools-opt.vcxproj">
+      <Project>{E448BABE-79EB-3DCE-B133-FDA2FB1939C4}</Project>
+      <Name>SPIRV-Tools-opt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\ThirdParty\SPIRV-Tools\source\SPIRV-Tools-static.vcxproj">
+      <Project>{B240E8E1-4BFF-3F31-BDAD-008536524EB8}</Project>
+      <Name>SPIRV-Tools-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentTools\ThirdParty\ZLib.vcxproj">
+      <Project>{EE3634AD-E303-343E-A413-695F87E84001}</Project>
+      <Name>ZLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\ThirdParty\glew\glew-static.vcxproj">
+      <Project>{099C3EBA-7FFA-3343-98B4-5AA9ADAB68D7}</Project>
+      <Name>glew-static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\ThirdParty\glslang\glslang\glslang.vcxproj">
+      <Project>{038D627E-0EAB-34FD-901A-60E9EEE20556}</Project>
+      <Name>glslang</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentTools\ThirdParty\libpng\png_static.vcxproj">
+      <Project>{4AE35C2C-3213-3B00-8CED-97075A49BA99}</Project>
+      <Name>png_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\ThirdParty\SPIRV-Cross\spirv-cross-core.vcxproj">
+      <Project>{0A00D42C-E660-3581-ACCE-FCFE89A68634}</Project>
+      <Name>spirv-cross-core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\ThirdParty\SPIRV-Cross\spirv-cross-glsl.vcxproj">
+      <Project>{18F9B9AA-2EED-342A-856E-401A462E7B5F}</Project>
+      <Name>spirv-cross-glsl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentCore\ThirdParty\xxHash\cmake_unofficial\xxhash.vcxproj">
+      <Project>{642FB8EC-6A7B-372B-B579-58A7265A7264}</Project>
+      <Name>xxhash</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

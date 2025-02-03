@@ -1,0 +1,12 @@
+﻿  Tutorial02_Cube.cpp
+C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src\Tutorial02_Cube.cpp(179,21): warning C4305: 'argumento': truncamiento de 'double' a 'T'
+C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src\Tutorial02_Cube.cpp(179,21): warning C4305:         with
+C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src\Tutorial02_Cube.cpp(179,21): warning C4305:         [
+C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src\Tutorial02_Cube.cpp(179,21): warning C4305:             T=float
+C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src\Tutorial02_Cube.cpp(179,21): warning C4305:         ]
+C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src\Tutorial02_Cube.cpp(180,21): warning C4305: 'argumento': truncamiento de 'double' a 'T'
+C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src\Tutorial02_Cube.cpp(180,21): warning C4305:         with
+C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src\Tutorial02_Cube.cpp(180,21): warning C4305:         [
+C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src\Tutorial02_Cube.cpp(180,21): warning C4305:             T=float
+C:\Users\Usuario\source\repos\DiligentEngine\DiligentSamples\Tutorials\Tutorial02_Cube\src\Tutorial02_Cube.cpp(180,21): warning C4305:         ]
+  Tutorial02_Cube.vcxproj -> C:\Users\Usuario\source\repos\DiligentEngine\Build\DiligentSamples\Tutorials\Tutorial02_Cube\Debug\Tutorial02_Cube.exe

@@ -1,0 +1,104 @@
+Texture2D    g_Texture;
+SamplerState g_Texture_sampler;
+
+Texture2D    g_ShadowMap;
+SamplerState g_ShadowMap_sampler;
+
+cbuffer LightAttribs
+{
+    float4 g_LightDirection; // xyz - dirección, w - no usado
+    float4 g_AmbientColor;   // Color ambiente
+    float4 g_DiffuseColor;   // Color difuso
+    float4 g_SpecularColor;  // Color especular
+};
+
+struct PSInput
+{
+    float4 Pos        : SV_POSITION;
+    float2 UV         : TEX_COORD;
+    float3 Normal     : NORMAL;
+    float3 WorldPos   : WORLD_POS;
+    float4 LightSpacePos : TEXCOORD1;
+};
+
+struct PSOutput
+{
+    float4 Color : SV_TARGET;
+};
+
+// Función para calcular sombras
+float CalculateShadow(float4 LightSpacePos)
+{
+#if ENABLE_SHADOWS
+    // Convertir de espacio homogéneo a coordenadas de textura
+    float3 projCoords = LightSpacePos.xyz / LightSpacePos.w;
+    
+    // Transformar al rango [0,1]
+    projCoords.xy = projCoords.xy * 0.5 + 0.5;
+    
+    // Invertir Y si es necesario
+    projCoords.y = 1.0 - projCoords.y;
+    
+    // Obtener profundidad más cercana almacenada en el shadow map
+    float closestDepth = g_ShadowMap.Sample(g_ShadowMap_sampler, projCoords.xy).r;
+    
+    // Profundidad actual
+    float currentDepth = projCoords.z;
+    
+    // Comparar profundidades con sesgo para evitar shadow acne
+    float bias = 0.005;
+    float shadow = (currentDepth - bias > closestDepth) ? 0.5 : 1.0;
+    
+    // Si estamos fuera del shadow map, no hay sombra
+    if (projCoords.x < 0.0 || projCoords.x > 1.0 || 
+        projCoords.y < 0.0 || projCoords.y > 1.0 ||
+        projCoords.z < 0.0 || projCoords.z > 1.0)
+    {
+        shadow = 1.0;
+    }
+    
+    return shadow;
+#else
+    return 1.0;
+#endif
+}
+
+void main(in  PSInput  PSIn,
+          out PSOutput PSOut)
+{
+    // Obtener color de textura
+    float4 textureColor = g_Texture.Sample(g_Texture_sampler, PSIn.UV);
+    
+    // Calcular iluminación
+    float3 normal = normalize(PSIn.Normal);
+    float3 lightDir = normalize(-g_LightDirection.xyz);
+    
+    // Componente ambiental
+    float3 ambient = g_AmbientColor.rgb;
+    
+    // Componente difusa
+    float diff = max(dot(normal, lightDir), 0.0);
+    float3 diffuse = g_DiffuseColor.rgb * diff;
+    
+    // Calcular sombra (1.0 = sin sombra, 0.5 = con sombra)
+    float shadow = CalculateShadow(PSIn.LightSpacePos);
+    
+    // Componente especular (simplificada)
+    float3 viewDir = normalize(float3(0.0, 0.0, -1.0) - PSIn.WorldPos);
+    float3 reflectDir = reflect(-lightDir, normal);
+    float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32.0);
+    float3 specular = g_SpecularColor.rgb * spec;
+    
+    // Combinar componentes
+    float3 lighting = (ambient + (diffuse + specular) * shadow);
+    
+    // Aplicar iluminación al color de textura
+    float4 finalColor = float4(textureColor.rgb * lighting, textureColor.a);
+    
+#if CONVERT_PS_OUTPUT_TO_GAMMA
+    // Use fast approximation for gamma correction.
+    finalColor.rgb = pow(finalColor.rgb, float3(1.0 / 2.2, 1.0 / 2.2, 1.0 / 2.2));
+#endif
+
+    PSOut.Color = finalColor;
+}

@@ -1,0 +1,24 @@
+#include "structures.fxh"
+
+Texture2D    g_Texture;
+SamplerState g_Texture_sampler; // By convention, texture samplers must use the '_sampler' suffix
+
+cbuffer PSConstants
+{
+    GlobalConstants g_Constants;
+}
+
+struct PSOutput
+{
+    float4 Color : SV_TARGET;
+};
+
+void TerrainPS(in TerrainDSOut PSIn,
+               out PSOutput    PSOut)
+{
+    // Obtener el color base de la textura
+    float4 BaseColor = g_Texture.Sample(g_Texture_sampler, PSIn.uv);
+    
+    // Usar directamente el color de la textura sin cálculos adicionales
+    PSOut.Color = BaseColor;
+}
